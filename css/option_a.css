@@ -1,0 +1,76 @@
+@media all and (max-width:300px) {
+	.musiclist {
+		overflow: hidden;
+	}
+	.musiclist .Listone{
+		max-width: 592px;
+		overflow: hidden;
+	}
+	.ul .li {
+		width: 250px;
+		height: 250px;
+		overflow: hidden;
+	}
+	.ul .li img {
+		width: 250px;
+		height: 250px;
+	}
+	.Listone .button {
+		display: none;
+	}
+	.playbutton a:after {
+		display: none;
+	}
+	.musiclist .limask {
+	    width: 220px;
+	    height: 230px;
+	}
+	.musiclist .ul {
+		/*width: 611px;*/
+		padding-left: 15.5px;
+		height: 250px;
+		overflow: hidden;
+	}
+	.musiclist .title {
+		width: 250px;
+	}
+	.musiclist .limask .PLAY1 {
+		margin: 12px auto 0;
+	}
+	.musiclist .limask .PLAY2 {
+	    right: 20px;
+	}
+	header .head {
+		/*width: 580px;*/
+		width: 100%;
+	}
+	header .smalllogo {
+		display: block;
+	}
+	header .headlogo {
+		display: none;
+	}
+	header .bigsearch {
+		margin-left: 50px;
+		display: block;
+	}
+	header .search {
+		display: none;
+	}
+	header .signup .log,
+	header .signup .sign {
+		display: none;
+	}
+	.mainpage .mainpic {
+		/*width: 532px;*/
+		width: 100%;
+		background-size: 602px 600px;
+	}
+	.mainpic .h2 {
+		font: 26px/32px 'Proxima Nova', helvetica, arial, sans-serif;
+		font-weight: 900;
+	}
+	.playbutton {
+		padding-left: 15.5px;
+	}
+}

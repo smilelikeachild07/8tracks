@@ -1,0 +1,616 @@
+body {
+	background-color: #eee;
+}
+header {
+	width: 100%;
+	height: 66px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	/*display: none;*/
+	background-color: rgba(41,52,74,.8);
+}
+body:hover header {
+	display: block;
+}
+.head {
+	width: 1260px;
+	height: 66px;
+	margin: 0 auto;
+	position: relative;
+    z-index: 999;
+}
+.smalllogo {
+	float: left;
+	margin-top: 15px;
+	display: none;
+}
+.headlogo {
+	float: left;
+	margin-top: 16px;
+}
+.bigsearch {
+	float: left;
+	padding-top: 16px;
+	display: none;
+}
+.search {
+	width: 257px;
+	float: left;
+	margin-left: 418px;
+	/*margin: 16px auto 0;*/
+	margin-top: 10px;
+}
+.search input {
+	border: none;
+	width: 217px;
+	height: 36px;
+	border: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+	border-radius: 25px 0 0 25px;
+	text-indent: 12px;
+	float: left;
+	font: 14px/17px "Helvetica Neue", Helvetica, sans-serif;
+}
+.search span {
+	display: inline-block;
+	vertical-align: top;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #0095da;
+	border-radius: 0 25px 25px 0;
+	float: left;
+	background: url(../img/search.png) no-repeat center;
+	background-color: #0095da;
+}
+.search span:hover {
+	background-color: #0582bc;
+}
+.signup {
+	float: right;
+}
+.signup .log {
+	float: left;
+    margin-left: 15px;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.signup .sign {
+	float: left;
+	background-color: #0095da;
+	border-radius: 25px;
+	text-align: center;
+	color: #fff;
+	font: 16px/18px 'Proxima Nova', helvetica, arial, sans-serif;
+	padding: 10px 18px;
+	margin-left: 15px;
+	margin-top: 10px;
+	font-weight: 600;
+}
+.signup .sign:hover {
+	background-color: #0582bc;
+}
+.signup .F_nav {
+	position: relative;
+	float: right;
+	margin-left: 5px;
+}
+.signup	.nav {
+	display: block;
+	text-align: center;
+	width: 40px;
+	height: 66px;
+}
+.signup	.F_nav:hover {
+	background-color: #232837;
+}
+.signup	.F_nav:hover .list {
+	display: block;
+}
+.signup	.nav span {
+	display: inline-block;
+	width: 6px;
+	height: 5px;
+	margin-top: 28px;
+	border-radius: 100%;
+	background-color: #fff;
+	margin-right: 1px;
+}
+.signup .list {
+	display: block;
+	position: absolute;
+	top: 66px;
+	right: -1px;
+	width: 220px;
+	height: 318px;
+	background-color: #232837;
+	display: none;
+}
+.signup .list a {
+	width: 220px;
+	height: 38px;
+	text-indent: 15px;
+	display: block;
+	color: #fff;
+	font: bold 13px/38px 'Proxima Nova', helvetica, arial, sans-serif;
+}
+.signup .list .track {
+	color: #dc181e;
+}
+.signup .list .track:hover {
+	background-color: #eeeeee;
+	color: #dc181e;
+}
+.signup .list a:hover {
+	background-color: #eeeeee;
+	color: #2f364a;
+}
+.mainpage {
+	width: 100%;
+	background-color: #112c4a;
+}
+.mainpic {
+	width: 1032px;
+	height: 568px;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../img/HomeAnimation_v1A.jpg) no-repeat 50%;
+	background-size: 800px 700px;
+}
+.mainpic .B_logo img{
+	width: 228px;
+	height: 60px;
+	margin-top: 146px;
+	margin-bottom: 18px;
+}
+.mainpic h2 {
+	font: 28.5px/32px 'Proxima Nova', helvetica, arial, sans-serif;
+	font-weight: 900;
+	margin-bottom: 6px;
+	color: #fff;
+}
+.mainpic p {
+	font: 19px/20px 'Proxima Nova', helvetica, arial, sans-serif;
+	margin-bottom: 18px;
+	color: #fff;
+	font-weight: normal;
+}
+.M_login {
+	height: 38px;
+}
+.M_login a:nth-of-type(1) {
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	background: rgba(0,0,0,0.3);
+	border: 1px solid #fff;
+	border-radius: 30px;
+	padding: 10px 18px;
+	text-align: center;
+	margin-right: 15px;
+	font: bold 14px/18px 'Proxima Nova', helvetica, arial, sans-serif;;
+}
+.M_login a:nth-of-type(1):hover {
+	background: rgba(0,0,0,0.4);
+}
+.M_login a:nth-of-type(2) {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 30px;
+	padding: 10px 18px;
+	background-color: #c9293e;
+	background: linear-gradient(to bottom, #d15f26, #c9293e); /*记得仔细研究一下*/
+	color: #fff;
+	border: 1px solid transparent;
+	text-align: center;
+	font: bold 14px/18px 'Proxima Nova', helvetica, arial, sans-serif;
+	transition: background 0.2s linear;
+}
+.M_login a:nth-of-type(2):hover {
+	background-color: #db703a;
+    background: linear-gradient(to bottom, #db703a, #d73a4e);
+}
+.musiclist {
+	width: 100%;
+	margin: 20px auto 40px auto;
+	/*position: relative;*/
+}
+.Listone {
+	width: 1260px;
+	margin: 0 auto;
+	padding: 8px 0 10px;
+	overflow: hidden;
+	position: relative;
+}
+.musiclist .playbutton {
+	position: relative;
+	font: 18px/24px 'Proxima Nova', helvetica, arial, sans-serif;
+	font-weight: 900;
+    padding-right: 10px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.musiclist .playbutton a {
+	color: #555;
+	position: relative;
+}
+.playbutton .icon {
+	width: 19px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 2px;
+	background: url(../img/narrow.png);
+}
+.staff .playbutton .icon {
+	background: url(../img/Book1.png);
+}
+.sofa .playbutton .icon {
+	width: 24px;
+	height: 21px;
+	background: url(../img/chair.png);
+}
+.workout .playbutton .icon {
+	width: 21px;
+	height: 21px;
+	background: url(../img/weight.png);
+}
+.party .playbutton .icon {
+	width: 21px;
+	height: 21px;
+	background: url(../img/glass.png);
+}
+.study .playbutton .icon {
+	width: 21px;
+	height: 21px;
+	background: url(../img/Book1.png);
+}
+.happy .playbutton .icon {
+	width: 21px;
+	height: 20px;
+	background: url(../img/smile.png);
+}
+.sad .playbutton .icon {
+	width: 21px;
+	height: 20px;
+	background: url(../img/teat.png);
+}
+.sleep .playbutton .icon {
+	width: 26px;
+	height: 21px;
+	background: url(../img/bed.png);
+}
+.sex .playbutton .icon {
+	width: 26px;
+	height: 21px;
+	background: url(../img/ear.png);
+}
+.Hiphop .playbutton .icon {
+	width: 26px;
+	height: 21px;
+	background: url(../img/radio.png);
+}
+.Indie .playbutton .icon {
+	width: 15px;
+	height: 21px;
+	background: url(../img/rock.png);
+}
+.playbutton .R_narrow {
+	display: none;
+	position: absolute;
+	right: -27px;
+	top: 0;
+	margin-top: 1px;
+	z-index: 99;
+}
+.playbutton:hover .R_narrow {
+	display: block;
+}
+.playbutton a:after {
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: auto;
+    margin-left: 10px;
+    margin-top: 2px;
+    background: #aaa;
+    height: 1px;
+   	width: 25000px;
+    z-index: 10;
+}
+.playbutton:hover a{
+	color: #3e404a;
+}
+.button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-left: 13px;
+    padding-right: 15px;
+    background-color: #eee;
+    z-index: 50;
+}
+.button a {
+	float: left;
+	color: #3e404a;
+    border: 2px solid #3e404a;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 5px;
+}
+.button a:nth-of-type(1) span {
+	display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 23px;
+    margin: 7px 0 0 -2px;
+    background: url(../img/spritepic.png) -66px -524px;
+}
+.button a:nth-of-type(2) span{
+	display: block;
+	width: 16px;
+	height: 1px;
+	background: #7e7e7e;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.button a:nth-of-type(2) .line {
+	margin-top: 12px;
+}
+.button a:nth-of-type(3) span {
+	display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 23px;
+    margin: 7px 0 0 2px;
+    background: url(../img/spritepic.png) -66px -524px;
+    transform: rotate(180deg);
+}
+.button a:hover {
+	background-color: #fff;
+}
+.musiclist ul {
+	margin-bottom: 57px;
+}
+.musiclist li {
+	width: 300px;
+	height: 300px;
+	color: #fff;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.musiclist li img {
+	width: 300px;
+	height: 300px;
+}
+.musiclist .Rb-Coner {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50px;
+    height: 50px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(../img/coner.png) center;
+    background-size: 100%;
+    display: none;
+}
+.musiclist li:hover .Rb-Coner{
+	display: block;
+	z-index: 999;
+}
+.musiclist li .R-coner {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+    height: 50px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(../img/Tconer.png) center;
+    background-size: 100%;
+    z-index: 4;
+}
+.musiclist .YRb-Coner {
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	width: 50px;
+    height: 50px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(../img/Goldconerreverse.png) center;
+    background-size: 100%;
+    display: none;
+}
+.musiclist li:hover .YRb-Coner{
+	display: block;
+	z-index: 999;
+}
+.musiclist li .YR-coner {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+    height: 50px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(../img/Goldconer.png) center;
+    background-size: 100%;
+    z-index: 4;
+}
+.musiclist ul {
+	width: 1260px;
+	margin: 0 auto;
+}
+.musiclist .title {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    z-index: 222;
+}
+.musiclist h3 {
+	padding-right: 40px;
+	margin-bottom: 2px;
+	font: 18px/20px 'Proxima Nova', helvetica, arial, sans-serif;
+	font-weight: 900;
+}
+.musiclist .titleblack a,
+.musiclist p a  {
+	color: #fff;
+}
+.musiclist p {
+	font: 13px/18px 'Proxima Nova', helvetica, arial, sans-serif;
+}
+.comment {
+	margin-top: 56px;
+}
+.comment a {
+	float: left;
+	margin-right: 11px;
+}
+.comment a:nth-of-type(1) span{
+	width: 10px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+	background: url(../img/spritepic.png) -268px -517px;
+	transform: rotateY(180deg);
+}
+.comment a:nth-of-type(2) span{
+	width: 14px;
+	height: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+	background: url(../img/spritepic.png) -198px -523px;
+}
+.comment a:nth-of-type(3) span{
+	width: 16px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+	background: url(../img/spritepic.png) -416px -311px;
+}
+.limask {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 280px;
+    padding: 10px 15px;
+    text-align: left;
+    z-index: 2;
+	background: rgba(0,0,0,0.55);
+	display: none;
+}
+li:hover .limask{
+	display: block;
+}
+.centerplay {
+	position: relative;
+}
+.centerplay a:nth-of-type(1) {
+	width: 80px;
+	height: 80px;
+	border: 5px solid #fff;
+	display: block;
+	border-radius: 100%;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0.2);
+	margin: 38px auto 62px;
+}
+.centerplay a:nth-of-type(1) span {
+	display: block;
+	width: 0px;
+	height: 0px;
+	border: 26px solid transparent;
+	border-left-color: #fff;
+	margin-left: 35px;
+	margin-top: 15px;
+}
+.centerplay a:nth-of-type(2) {
+	border: 3px solid #fff;
+    height: 35px;
+    width: 35px;
+    text-indent: 1px;
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    border-radius: 100%;
+}
+.centerplay a:nth-of-type(2) span {
+	display: block;
+	width: 12px;
+	height: 15px;
+	margin-left: 12px;
+	margin-top: 10px;
+	background: url(../img/spritepic.png) -60px -720px;
+}
+.tags {
+	z-index: 2;
+    padding-left: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    height: 35px;
+    /*max-height: 80px;*/
+    /*vertical-align: bottom;*/
+    font-size: 0;
+}
+.tag {
+	padding: 5px 10px;
+    margin: 0 5px 8px 0;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid #eee;
+    border-radius: 30px;
+    display: inline-block;
+}
+footer {
+	width: 100%;
+}
+footer div a:hover{
+	background-color: #0582bc;
+}
+footer p {
+	font-size: 14px;
+	font-family: 'Proxima Nova', helvetica, arial, sans-serif;
+	line-height: 18px;
+	text-align: center;
+	color: #070000;
+	margin-bottom: 34px;
+}
+footer div {
+	text-align: center;
+	margin-bottom: 32px;
+}
+footer a {
+	padding: 23px 55px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 18px;
+    background: #0095da;
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+}

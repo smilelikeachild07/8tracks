@@ -1,0 +1,31 @@
+@media all and (max-width:999px) and (min-width:660px) {
+	.musiclist {
+		overflow: hidden;
+		width: 630px;
+		/*width: 100%;*/
+	}
+	.musiclist .Listone,
+	.musiclist .ul {
+		width: 630px;
+		/*width: 100%;*/
+	}
+	.musiclist .ul {
+		height: 300px;
+	}
+	header .head {
+		width: 645px;
+		/*width: 100%;*/
+	}
+	header .search{
+		margin-left: 56px;
+	}
+	.mainpage .mainpic {
+		/*width: 100%;*/
+		width: 550px;
+		background-size: 650px 700px;
+	}
+	.mainpic .h2 {
+		font: 27px/32px 'Proxima Nova', helvetica, arial, sans-serif;
+		font-weight: 900;
+	}
+}
